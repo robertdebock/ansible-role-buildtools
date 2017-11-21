@@ -1,3 +1,18 @@
 ---
 packages:
-  - "@Development tools"
+  - ldc
+  - ldc-druntime
+  - ldc-druntime-devel
+  - ldc-phobos-devel
+  - make
+  - pkgconf
+  - ctags
+  - indent
+  - astyle
+  - cmake
+  - derelict-devel
+  - geany
+  - gl3n-devel
+  - insight
+  - nemiver
+  - uncrustify
