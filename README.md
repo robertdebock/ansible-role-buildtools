@@ -20,6 +20,11 @@ Dependencies
 
 - robertdebock/ansible-role-bootstrap
 
+Download the dependencies by issueing this command:
+```
+ansible-galaxy install --role-file requirements.yml
+```
+
 Example Playbook
 ----------------
 
@@ -29,8 +34,7 @@ Example Playbook
   become: yes
 
   roles:
-    - robertdebock.ansible-role-buildtools
-
+    - ansible-role-buildtools
 
   tasks:
     - name: make something
