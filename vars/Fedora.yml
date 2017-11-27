@@ -3,8 +3,6 @@ packages:
   - avr-gcc
   - avr-libc
   - automake
-  - aclocal
-  - autoheader
   - autoconf
   - ldc
   - ldc-druntime
