@@ -1,6 +1,7 @@
 ---
 packages:
   - avr-gcc
+  - avr-libc
   - ldc
   - ldc-druntime
   - ldc-druntime-devel
