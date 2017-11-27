@@ -4,6 +4,7 @@ packages:
   - avr-libc
   - automake
   - autoconf
+  - kernel-debug-devel
   - ldc
   - ldc-druntime
   - ldc-druntime-devel
