@@ -34,7 +34,7 @@ Example Playbook
   become: yes
 
   roles:
-    - ansible-role-buildtools
+    - robertdebock.ansible-role-buildtools
 
   tasks:
     - name: make something
@@ -43,6 +43,8 @@ Example Playbook
         target: install
       become: yes
 ```
+
+Install this role using `galaxy install robertdebock.ansible-role-bootstrap`.
 
 License
 -------
