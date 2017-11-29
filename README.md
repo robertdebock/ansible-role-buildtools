@@ -1,4 +1,4 @@
-ansible-role-buildtools
+buildtools
 =========
 
 [![Build Status](https://travis-ci.org/robertdebock/ansible-role-buildtools.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-buildtools)
@@ -18,9 +18,9 @@ None known.
 Dependencies
 ------------
 
-- robertdebock/ansible-role-bootstrap
+- robertdebock.bootstrap
 
-Download the dependencies by issueing this command:
+Download the dependencies by issuing this command:
 ```
 ansible-galaxy install --role-file requirements.yml
 ```
@@ -34,7 +34,7 @@ Example Playbook
   become: yes
 
   roles:
-    - robertdebock.ansible-role-buildtools
+    - robertdebock.buildtools
 
   tasks:
     - name: make something
@@ -44,7 +44,7 @@ Example Playbook
       become: yes
 ```
 
-Install this role using `galaxy install robertdebock.ansible-role-bootstrap`.
+Install this role using `galaxy install robertdebock.buildtools`.
 
 License
 -------
