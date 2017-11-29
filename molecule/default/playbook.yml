@@ -3,7 +3,7 @@
   hosts: all
 
   roles:
-    - role: buildtools
+    - role: ansible-role-buildtools
 
   tasks:
     - name: run gcc
