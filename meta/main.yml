@@ -40,4 +40,4 @@ galaxy_info:
     - RHEL
 
 dependencies:
-  - robertdebock.ansible-role-bootstrap
+  - robertdebock.bootstrap
