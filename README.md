@@ -1,7 +1,7 @@
 buildtools
 =========
 
-[![Build Status](https://travis-ci.org/robertdebock.ansible-role-buildtools.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-buildtools)
+[![Build Status](https://travis-ci.org/robertdebock/ansible-role-buildtools.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-buildtools)
 
 Install buildtools for your system.
 
