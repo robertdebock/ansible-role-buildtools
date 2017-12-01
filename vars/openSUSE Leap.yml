@@ -10,7 +10,6 @@ packages:
   - gcc
   - gdbm-devel
   - gettext-tools
-  - gettext-tools-mini
   - glibc-devel
   - libtool
   - m4
