@@ -19,7 +19,6 @@ packages:
   - zlib-devel
   - bin86
   - binutils-devel
-  - e2fsprogs-devel
   - fdupes
   - gcc-c++
   - gcc-info
