@@ -1,1 +1,3 @@
 ---
+buildtools_packages:
+  - build-essential
