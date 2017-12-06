@@ -1,3 +1,3 @@
 ---
-packages:
+buildtools_packages:
   - "@Development tools"
