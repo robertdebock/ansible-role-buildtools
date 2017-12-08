@@ -1,5 +1,5 @@
 ---
-# vars file for epel
+# vars file for buildroot
 
 buildtools_packages:
   Alpine:
