@@ -1,15 +1,10 @@
 ---
 # tasks file for buildtools
-- name: include distribution specific variables
-  include_vars: "{{ item }}"
-  with_first_found:
-    - "buildtools.{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml"
-    - "buildtools.{{ ansible_distribution }}.yml"
-    - "buildtools.default.yml"
-
 - name: install software
   package:
     name: "{{ item }}"
     state: present
   with_items:
-    - "{{ buildtools_packages }}"
+    - "{{ buildtools_packages[ansible_distribution][ansible_distribution_major_version]
+      | default(buildtools_packages[ansible_distribution])
+      | default(buildtools_packages['default'])}}"
