@@ -5,6 +5,6 @@
     name: "{{ item }}"
     state: present
   with_items:
-    - "{{ buildtools_packages[ansible_distribution][ansible_distribution_major_version]
-      | default(buildtools_packages[ansible_distribution])
-      | default(buildtools_packages['default'])}}"
+    - "{{ buildtools_packages[ansible_distribution ~ '-' ~ ansible_distribution_major_version]
+      | default(buildtools_packages[ansible_distribution]
+      | default(buildtools_packages['default'] )) }}"

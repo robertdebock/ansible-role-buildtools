@@ -6,13 +6,13 @@ buildtools_packages:
     - alpine-sdk
   CentOS:
     - "@Development tools"
-    "8":
-      - other
+  CentOS-8:
+    - "Other"
   default:
     - build-essential
   Fedora:
     - "@C Development Tools and Libraries"
-  "openSUSE Leap":
+  openSUSE Leap:
     - autoconf
     - automake
     - binutils
