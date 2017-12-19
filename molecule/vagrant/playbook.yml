@@ -5,7 +5,7 @@
   gather_facts: no
 
   roles:
-    - role: robertdebock.buildtools
+    - role: ansible-role-buildtools
 
   tasks:
     - name: run gcc
