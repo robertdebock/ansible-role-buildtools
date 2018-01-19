@@ -4,6 +4,8 @@
 buildtools_packages:
   Alpine:
     - alpine-sdk
+  Archlinux:
+    - base-devel
   CentOS:
     - "@Development tools"
   CentOS-8:
