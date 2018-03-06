@@ -44,5 +44,4 @@ galaxy_info:
     - Ubuntu
     - RHEL
 
-dependencies:
-  - robertdebock.bootstrap
+dependencies: []
