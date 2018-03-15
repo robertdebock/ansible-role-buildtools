@@ -8,8 +8,6 @@ buildtools_packages:
     - base-devel
   CentOS:
     - "@Development tools"
-  CentOS-8:
-    - "Other"
   default:
     - build-essential
   Fedora:
