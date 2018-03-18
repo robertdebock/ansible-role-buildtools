@@ -5,6 +5,7 @@ buildtools_packages:
   Alpine:
     - alpine-sdk
     - libffi-dev
+    - openssl-dev
   Archlinux:
     - base-devel
   CentOS:
