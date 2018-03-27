@@ -1,6 +1,7 @@
 #!/bin/sh
 
-echo "# Compatibility"
+echo "Compatibility"
+echo "-------------"
 echo ""
 echo "This role has been tested against the following distributions and Ansible version:"
 echo ""
