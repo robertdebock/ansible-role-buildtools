@@ -61,12 +61,12 @@ install:
   - pip install ansible"${version}"
   - pip install molecule
   - pip install docker-py
-  - echo '|distribution|version|' > report.txt
-  - echo '|------------|-------|' >> report.txt
+  - echo "|distribution|version|" > report.txt
+  - echo "|------------|-------|" >> report.txt
 
 script:
   - molecule test --scenario-name "${distro}"
-  - echo "|${distro}|${version}|' >> report.txt
+  - echo "|${distro}|${version}|" >> report.txt
 
 after_success:
   - cat report.txt
