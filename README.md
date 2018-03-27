@@ -34,7 +34,8 @@ Download the dependencies by issuing this command:
 ansible-galaxy install --role-file requirements.yml
 ```
 
-# Compatibility
+Compatibility
+-------------
 
 This role has been tested against the following distributions and Ansible version:
 
