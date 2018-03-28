@@ -5,7 +5,7 @@ echo "-------------"
 echo ""
 echo "This role has been tested against the following distributions and Ansible version:"
 echo ""
-echo "|distribution|ansible 2.4|ansible 2.5|ansible 2.6|"
+echo "|distribution|ansible 2.3|ansible 2.4|ansible 2.5|"
 echo "|------------|-----------|-----------|-----------|"
 cat .travis.yml | docker run -i --rm jlordiales/jyparser get ".env" | while read dash version distro ; do
   echo "${distro}" | cut -d\" -f2 | sort | uniq | while read distribution ; do
