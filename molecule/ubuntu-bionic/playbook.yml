@@ -2,11 +2,13 @@
 - name: Converge
   hosts: all
   gather_facts: no
-  become: yes
 
   roles:
-    - role: ansible-role-bootstrap
+    - role: robertdebock.bootstrap
+    - role: ansible-role-buildtools
 
   tasks:
-    - name: test connection
-      ping:
+    - name: run gcc
+      shell: gcc --version > gcc.version
+      args:
+        creates: gcc.version
