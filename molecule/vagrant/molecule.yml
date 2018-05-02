@@ -18,10 +18,10 @@ platforms:
     box: debian/jessie64
   - name: buildtools-debian-buster64
     box: desc/buster64
-  - name: buildtools-fedora-26-cloud-base
-    box: fedora/26-cloud-base
   - name: buildtools-fedora-27-cloud-base
     box: fedora/27-cloud-base
+  - name: buildtools-fedora-28-cloud-base
+    box: fedora/28-cloud-base
   - name: buildtools-opensuse-openSUSE-42-2-x86-64
     box: opensuse/openSUSE-42.2-x86_64
   - name: buildtools-ubuntu-trusty
