@@ -8,14 +8,14 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: buildtools-fedora-27
-    image: fedora:27
+  - name: buildtools-ubuntu-latest
+    image: ubuntu:latest
 provisioner:
   name: ansible
   lint:
     name: ansible-lint
 scenario:
-  name: fedora-27
+  name: ubuntu-latest
 verifier:
   name: goss
   lint:

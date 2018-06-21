@@ -8,14 +8,14 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: buildtools-centos-7
-    image: centos:7
+  - name: buildtools-debian-stable
+    image: debian:stable
 provisioner:
   name: ansible
   lint:
     name: ansible-lint
 scenario:
-  name: centos-7
+  name: debian-stable
 verifier:
   name: goss
   lint:

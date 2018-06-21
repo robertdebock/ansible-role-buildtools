@@ -8,14 +8,14 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: buildtools-ubuntu-bionic
-    image: ubuntu:bionic
+  - name: buildtools-alpine-latest
+    image: alpine:latest
 provisioner:
   name: ansible
   lint:
     name: ansible-lint
 scenario:
-  name: ubuntu-bionic
+  name: alpine-latest
 verifier:
   name: goss
   lint:

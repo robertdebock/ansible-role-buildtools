@@ -8,14 +8,14 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: buildtools-debian-stretch
-    image: debian:stretch
+  - name: buildtools-centos-latest
+    image: centos:latest
 provisioner:
   name: ansible
   lint:
     name: ansible-lint
 scenario:
-  name: debian-stretch
+  name: centos-latest
 verifier:
   name: goss
   lint:
