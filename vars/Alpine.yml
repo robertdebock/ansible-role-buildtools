@@ -1,0 +1,6 @@
+---
+# vars file for buildroot
+buildtools_packages:
+  - alpine-sdk
+  - libffi-dev
+  - openssl-dev

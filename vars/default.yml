@@ -1,0 +1,4 @@
+---
+# vars file for buildroot
+buildtools_packages:
+  - build-essential
