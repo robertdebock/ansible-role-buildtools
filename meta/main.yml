@@ -41,11 +41,11 @@ galaxy_info:
     - repository
     - installer
     - packages
-    - Alpine
-    - CentOS
-    - Fedora
-    - Debian
-    - Ubuntu
-    - RHEL
+    - alpine
+    - centos
+    - fedora
+    - debian
+    - ubuntu
+    - rhel
 
 dependencies: []
