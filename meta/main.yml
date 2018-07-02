@@ -2,9 +2,9 @@
 galaxy_info:
   author: Robert de Bock
   role_name: buildtools
-  description: Install buildtools.
+  description: Install buildtools or a list of packages needed to develop/compile/package other software
   license: Apache License, Version 2.0
-  min_ansible_version: 2.3
+  min_ansible_version: 2.4
   min_ansible_container_version: 0.2.0
 
   platforms:
@@ -37,15 +37,17 @@ galaxy_info:
         - bionic
 
   galaxy_tags:
-    - epel
-    - repository
-    - installer
-    - packages
     - alpine
+    - archlinux
     - centos
-    - fedora
     - debian
-    - ubuntu
+    - development
+    - fedora
+    - installer
+    - opensuse
+    - packages
     - rhel
+    - system
+    - ubuntu
 
 dependencies: []
