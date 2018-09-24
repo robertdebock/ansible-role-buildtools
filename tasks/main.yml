@@ -13,5 +13,6 @@
 - name: install software
   package:
     name: "{{ item }}"
+    state: present
   with_items:
     - "{{ buildtools_packages }}"
