@@ -3,7 +3,19 @@ buildtools
 
 [![Build Status](https://travis-ci.org/robertdebock/ansible-role-buildtools.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-buildtools)
 
-Install buildtools for your system.
+Install buildtools for your system, useful so other roles can depend on this role.
+
+[Unit tests](https://travis-ci.org/robertdebock/ansible-role-buildtools) are done on every commit and periodically.
+
+If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-buildtools/issues)
+
+To test this role locally please use [Molecule](https://github.com/metacloud/molecule):
+```
+pip install molecule
+molecule test --scenario-name fedora-latest
+```
+There are many scenarios available, please have a look in the `molecule/` directory.
+
 
 Context
 --------

@@ -1,18 +1,7 @@
 ---
 # tasks file for buildtools
-- name: load default variables
-  include_vars:
-    file: default.yml
-
-- name: load os-specific variables
-  include_vars: "{{ item }}"
-  with_first_found:
-    - "{{ ansible_distribution }}.yml"
-    - default.yml
-
-- name: install software
+- name: install buildtools
   package:
-    name: "{{ item }}"
-    state: present
-  with_items:
-    - "{{ buildtools_packages }}"
+    name: "{{ buildtools_packages[ansible_distribution]
+          | default (buildtools_packages['default'] ) }}"
+    state: "{{ buildtools_package_state }}"
