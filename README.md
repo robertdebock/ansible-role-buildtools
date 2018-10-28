@@ -5,47 +5,62 @@ buildtools
 
 Install buildtools for your system, useful so other roles can depend on this role.
 
-[Unit tests](https://travis-ci.org/robertdebock/ansible-role-buildtools) are done on every commit and periodically.
 
-If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-buildtools/issues)
+Example Playbook
+----------------
 
-To test this role locally please use [Molecule](https://github.com/metacloud/molecule):
+This example is taken from `molecule/default/playbook.yml`:
 ```
-pip install molecule
-molecule test
+---
+- name: Converge
+  hosts: all
+  gather_facts: false
+
+  roles:
+    - role: robertdebock.bootstrap
+    - role: ansible-role-buildtools
+
+  tasks:
+    - name: run gcc
+      shell: gcc --version > gcc.version
+      args:
+        creates: gcc.version
+
 ```
-There are many scenarios available, please have a look in the `molecule/` directory.
-
-
-Context
---------
-This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://robertdebock.nl/) for further information.
-
-Here is an overview of related roles:
-
-![dependencies](https://raw.githubusercontent.com/robertdebock/drawings/artifacts/buildtools.png "Dependency")
-
-Requirements
-------------
-
-Access to a repository containing packages, likely on the internet.
 
 Role Variables
 --------------
 
-None known.
+These variables are set in `defaults/main.yml`:
+```
+---
+# defaults file for buildtools
 
-Dependencies
+# To update all packages installed by this roles, set `buildtools_package_state` to `latest`.
+buildtools_package_state: present
+
+```
+
+Requirements
 ------------
 
-You may use this role to prepare your system:
+- Access to a repository containing packages, likely on the internet.
+- A recent version of Ansible. (Tests run on the last 3 release of Ansible.)
 
-- [robertdebock.bootstrap](https://travis-ci.org/robertdebock/ansible-role-bootstrap)
+These roles can be installed to ensure all requirements are met:
 
-Download the dependencies by issuing this command:
-```
-ansible-galaxy install --role-file requirements.yml
-```
+- none
+
+To install all requirements at once: `ansible-galaxy install -r requirements.yml`.
+
+Context
+-------
+
+This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://robertdebock.nl/) for further information.
+
+Here is an overview of related roles:
+![dependencies](https://raw.githubusercontent.com/robertdebock/drawings/artifacts/buildtools.png "Dependency")
+
 
 Compatibility
 -------------
@@ -72,32 +87,26 @@ This role has been tested against the following distributions and Ansible versio
 
 A single star means the build may fail, it's marked as an experimental build.
 
-Example Playbook
-----------------
+Testing
+-------
 
+[Unit tests](https://travis-ci.org/robertdebock/ansible-role-buildtools) are done on every commit and periodically.
+
+If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-buildtools/issues)
+
+To test this role locally please use [Molecule](https://github.com/metacloud/molecule):
 ```
----
-- hosts: servers
-  become: yes
-
-  roles:
-    - robertdebock.bootstrap
-    - robertdebock.buildtools
-
-  tasks:
-    - name: make something
-      make:
-        chdir: /my/project
-        target: install
-      become: yes
+pip install molecule
+molecule test
 ```
+There are many specific scenarios available, please have a look in the `molecule/` directory.
 
-Install this role using `galaxy install robertdebock.buildtools`.
 
 License
 -------
 
-Apache License, Version 2.0
+Apache-2.0
+
 
 Author Information
 ------------------
