@@ -1,6 +1,6 @@
 ---
 # vars file for buildroot
-buildtools_packages:
+_buildtools_packages:
   default:
     - build-essential
   Alpine:
@@ -86,3 +86,5 @@ buildtools_packages:
     - patch
     - pkg-config
     - subversion
+
+buildtools_packages: "{{ _buildtools_packages[ansible_distribution] | default (_buildtools_packages['default'] ) }}"

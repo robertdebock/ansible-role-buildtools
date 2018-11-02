@@ -2,6 +2,5 @@
 # tasks file for buildtools
 - name: install buildtools
   package:
-    name: "{{ buildtools_packages[ansible_distribution]
-          | default (buildtools_packages['default'] ) }}"
+    name: "{{ buildtools_packages }}"
     state: "{{ buildtools_package_state }}"
