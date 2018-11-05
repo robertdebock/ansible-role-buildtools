@@ -3,8 +3,7 @@ buildtools
 
 [![Build Status](https://travis-ci.org/robertdebock/ansible-role-buildtools.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-buildtools)
 
-Install buildtools for your system, useful so other roles can depend on this role.
-
+The purpose of this role is to install buildtools on your system.
 
 Example Playbook
 ----------------
