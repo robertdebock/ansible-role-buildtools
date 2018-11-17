@@ -7,6 +7,9 @@ _buildtools_packages:
     - alpine-sdk
     - libffi-dev
     - openssl-dev
+  Amazon:
+    - gcc
+    - make
   Archlinux:
     - base-devel
   CentOS:
