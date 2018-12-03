@@ -4,3 +4,6 @@
   package:
     name: "{{ buildtools_packages }}"
     state: "{{ buildtools_package_state }}"
+  register: buildtools_install_buildtools
+  until: buildtools_install_buildtools is succeeded
+  retries: 3
