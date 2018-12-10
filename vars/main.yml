@@ -14,8 +14,10 @@ _buildtools_packages:
     - base-devel
   CentOS:
     - "@Development tools"
+    - perl-Digest-SHA
   Fedora:
     - "@Development tools"
+    - perl-Digest-SHA
   openSUSE Leap:
     - autoconf
     - automake
