@@ -7,6 +7,7 @@ _buildtools_packages:
     - alpine-sdk
     - libffi-dev
     - openssl-dev
+    - perl-utils
   Amazon:
     - gcc
     - make
