@@ -34,8 +34,10 @@ platforms:
     image: opensuse:leap
   - name: buildtools-opensuse-tumbleweed
     image: opensuse:tumbleweed
-  - name: buildtools-ubuntu-artful
-    image: ubuntu:artful
+  - name: buildtools-ubuntu-latest
+    image: ubuntu:latest
+  - name: buildtools-ubuntu-rolling
+    image: ubuntu:rolling
   - name: buildtools-ubuntu-devel
     image: ubuntu:devel
   - name: buildtools-ubuntu-latest
