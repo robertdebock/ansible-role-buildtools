@@ -32,8 +32,6 @@ platforms:
     image: fedora:rawhide
   - name: buildtools-opensuse-leap
     image: opensuse:leap
-  - name: buildtools-opensuse-tumbleweed
-    image: opensuse:tumbleweed
   - name: buildtools-ubuntu-latest
     image: ubuntu:latest
   - name: buildtools-ubuntu-rolling
