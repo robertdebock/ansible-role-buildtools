@@ -6,3 +6,9 @@
 
   roles:
     - ansible-role-buildtools
+
+  tasks:
+    - name: run gcc
+      shell: gcc --version > gcc.version
+      args:
+        creates: gcc.version
