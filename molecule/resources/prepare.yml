@@ -1,11 +1,10 @@
 ---
-- name: Converge
+- name: Prepare
   hosts: all
-  gather_facts: false
+  gather_facts: no
 
   roles:
     - robertdebock.bootstrap
-    - ansible-role-buildtools
 
   tasks:
     - name: run gcc

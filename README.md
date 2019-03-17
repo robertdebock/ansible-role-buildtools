@@ -13,11 +13,22 @@ This example is taken from `molecule/default/playbook.yml`:
 ---
 - name: Converge
   hosts: all
-  gather_facts: false
+  become: yes
+  gather_facts: yes
+
+  roles:
+    - robertdebock.buildtools
+```
+
+The machine you are running this on, may need to be prepared. Tests have been done on machines prepared by this playbook:
+```yaml
+---
+- name: Prepare
+  hosts: all
+  gather_facts: no
 
   roles:
     - robertdebock.bootstrap
-    - robertdebock.buildtools
 
   tasks:
     - name: run gcc
