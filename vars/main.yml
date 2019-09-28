@@ -13,14 +13,13 @@ _buildtools_packages:
     - make
   Archlinux:
     - base-devel
-  CentOS:
-    - "@Development tools"
-    - perl-Digest-SHA
-  Fedora:
+  Debian:
+    - build-essential
+  RedHat:
     - "@Development tools"
     - perl-Digest-SHA
     - libffi-devel
-  openSUSE Leap:
+  Suse:
     - autoconf
     - automake
     - binutils
@@ -57,4 +56,4 @@ _buildtools_packages:
     - pkg-config
     - subversion
 
-buildtools_packages: "{{ _buildtools_packages[ansible_distribution] | default (_buildtools_packages['default'] ) }}"
+buildtools_packages: "{{ _buildtools_packages[ansible_os_family] | default (_buildtools_packages['default'] ) }}"
