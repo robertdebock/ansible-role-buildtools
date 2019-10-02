@@ -6,6 +6,9 @@ buildtools
 
 Install buildtools on your system.
 
+<img src="https://img.shields.io/ansible/role/d/22111"/>
+<img src="https://img.shields.io/ansible/quality/22111"/>
+
 Example Playbook
 ----------------
 
