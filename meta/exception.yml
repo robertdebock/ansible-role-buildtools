@@ -1,6 +1,0 @@
----
-exceptions:
-  - variation: Alpine
-    reason: "geteltorito (missing)"
-  - variation: openSUSE Leap
-    reason: "No provider of '+geteltorito' found"
