@@ -22,12 +22,6 @@ This example is taken from `molecule/resources/playbook.yml`:
 
   roles:
     - robertdebock.buildtools
-
-  tasks:
-    - name: run gcc
-      shell: gcc --version > gcc.version
-      args:
-        creates: gcc.version
 ```
 
 The machine you are running this on, may need to be prepared.
