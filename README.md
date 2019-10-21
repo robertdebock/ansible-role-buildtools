@@ -89,16 +89,15 @@ This role has been tested on these [container images](https://hub.docker.com/):
 
 |container|tag|allow_failures|
 |---------|---|--------------|
-|docker-alpine-openrc|latest|no|
-|docker-alpine-openrc|edge|yes|
-|docker-centos-systemd|7|no|
-|docker-centos-systemd|latest|no|
 |docker-debian-systemd|stable|yes|
 |docker-debian-systemd|unstable|yes|
 |docker-debian-systemd|latest|no|
+|docker-centos-systemd|7|no|
+|docker-redhat-systemd|7|no|
+|docker-centos-systemd|latest|no|
+|docker-redhat-systemd|latest|no|
 |docker-fedora-systemd|latest|no|
 |docker-fedora-systemd|rawhide|yes|
-|opensuse/|leap|no|
 |docker-ubuntu-systemd|rolling|yes|
 |docker-ubuntu-systemd|devel|yes|
 |docker-ubuntu-systemd|latest|no|
