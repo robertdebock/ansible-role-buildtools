@@ -15,6 +15,13 @@ _buildtools_packages:
     - base-devel
   Debian:
     - build-essential
+  RedHat-7:
+    - bison
+    - gcc
+    - git
+    - make
+  RedHat-8:
+    - "@Development Tools"
   RedHat:
     - "@Development tools"
     - perl-Digest-SHA
@@ -56,4 +63,4 @@ _buildtools_packages:
     - pkg-config
     - subversion
 
-buildtools_packages: "{{ _buildtools_packages[ansible_os_family] | default (_buildtools_packages['default'] ) }}"
+buildtools_packages: "{{ _buildtools_packages[ansible_os_family ~ '-' ~ ansible_distribution_major_version] | default(_buildtools_packages[ansible_os_family] | default (_buildtools_packages['default'])) }}"
