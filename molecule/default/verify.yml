@@ -1,11 +1,16 @@
 ---
 - name: Verify
   hosts: all
-  become: yes
-  gather_facts: yes
+  become: no
+  gather_facts: no
 
   tasks:
     - name: run gcc
       shell: gcc --version > gcc.version
       args:
         creates: gcc.version
+
+    - name: run make
+      shell: make --version > make.version
+      args:
+        creates: make.version
