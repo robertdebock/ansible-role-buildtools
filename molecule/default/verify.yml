@@ -6,11 +6,10 @@
 
   tasks:
     - name: run gcc
-      shell: gcc --version > gcc.version
-      args:
-        creates: gcc.version
+      command: gcc --version
 
     - name: run make
-      shell: make --version > make.version
-      args:
-        creates: make.version
+      command: make --version
+
+    - name: run shasum
+      command: shasum --version

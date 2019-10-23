@@ -8,9 +8,6 @@ _buildtools_packages:
     - libffi-dev
     - openssl-dev
     - perl-utils
-  Amazon:
-    - gcc
-    - make
   Archlinux:
     - base-devel
   Debian:
@@ -20,8 +17,10 @@ _buildtools_packages:
   RedHat:
     - gcc
     - make
+    - perl-Digest-SHA
   Suse:
     - gcc
     - make
+    - perl-Digest-SHA
 
 buildtools_packages: "{{ _buildtools_packages[ansible_distribution] | default(_buildtools_packages[ansible_os_family] | default (_buildtools_packages['default'])) }}"
