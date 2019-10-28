@@ -13,3 +13,6 @@
 
     - name: run shasum
       command: shasum --version
+
+    - name: run bison
+      command: bison --version

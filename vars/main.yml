@@ -16,10 +16,12 @@ _buildtools_packages:
     - "@Development Tools"
     - perl-Digest-SHA
   RedHat:
+    - bison
     - gcc
     - make
     - perl-Digest-SHA
   Suse:
+    - bison
     - gcc
     - make
     - perl-Digest-SHA1
