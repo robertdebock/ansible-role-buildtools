@@ -8,23 +8,29 @@ _buildtools_packages:
     - libffi-dev
     - openssl-dev
     - perl-utils
+    - elfutils-libelf
   Archlinux:
     - base-devel
+    - libelf
   Debian:
     - build-essential
     - bison
+    - libelf-dev
   CentOS:
     - "@Development Tools"
     - perl-Digest-SHA
+    - elfutils-libelf-devel
   RedHat:
     - bison
     - gcc
     - make
     - perl-Digest-SHA
+    - elfutils-libelf-devel
   Suse:
     - bison
     - gcc
     - make
     - perl-Digest-SHA1
+    - elfutils-libelf-devel
 
 buildtools_packages: "{{ _buildtools_packages[ansible_distribution] | default(_buildtools_packages[ansible_os_family] | default (_buildtools_packages['default'])) }}"
