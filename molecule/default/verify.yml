@@ -16,3 +16,9 @@
 
     - name: run bison
       command: bison --version
+
+    - name: find libelf
+      find:
+        paths: /usr
+        patterns: libelf.so.1
+  
