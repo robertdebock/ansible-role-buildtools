@@ -21,4 +21,3 @@
       find:
         paths: /usr
         patterns: libelf.so.1
-  
