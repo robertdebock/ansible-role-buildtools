@@ -30,17 +30,10 @@ galaxy_info:
         - bionic
 
   galaxy_tags:
-    - alpine
-    - archlinux
     - centos
-    - debian
     - development
-    - fedora
     - installer
-    - opensuse
     - packages
-    - rhel
     - system
-    - ubuntu
 
 dependencies: []
