@@ -31,6 +31,6 @@ _buildtools_packages:
     - gcc
     - make
     - perl-Digest-SHA1
-    - elfutils-libelf-devel
+    - libelf-devel
 
 buildtools_packages: "{{ _buildtools_packages[ansible_distribution] | default(_buildtools_packages[ansible_os_family] | default (_buildtools_packages['default'])) }}"
