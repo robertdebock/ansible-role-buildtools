@@ -12,6 +12,7 @@ _buildtools_packages:
     - base-devel
   Debian:
     - build-essential
+    - bison
   CentOS:
     - "@Development Tools"
     - perl-Digest-SHA
