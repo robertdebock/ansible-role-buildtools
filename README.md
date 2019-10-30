@@ -77,6 +77,8 @@ This role has been tested on these [container images](https://hub.docker.com/):
 
 |container|tag|allow_failures|
 |---------|---|--------------|
+|alpine|latest|no|
+|alpine|edge|yes|
 |debian|stable|yes|
 |debian|unstable|yes|
 |debian|latest|no|
