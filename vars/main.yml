@@ -18,10 +18,17 @@ _buildtools_packages:
     - bison
     - build-essential
     - libelf-dev
+  CentOS-7:
+    - "@Development Tools"
+    - elfutils-libelf-devel
+    - perl-Digest-SHA
+    - python-devel
   CentOS:
     - "@Development Tools"
     - elfutils-libelf-devel
     - perl-Digest-SHA
+    - python3-devel
+  CentOS:
   RedHat:
     - bison
     - elfutils-libelf-devel
