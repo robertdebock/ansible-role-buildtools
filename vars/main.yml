@@ -28,7 +28,6 @@ _buildtools_packages:
     - elfutils-libelf-devel
     - perl-Digest-SHA
     - python3-devel
-  CentOS:
   RedHat:
     - bison
     - elfutils-libelf-devel
