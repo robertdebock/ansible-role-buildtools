@@ -66,7 +66,6 @@ After running this role, this playbook runs to verify that everything works, thi
           - buildtools_find_libelf.matched >= 0
         msg: could not find libelf.so.1 in /usr
 ```
-```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
 
