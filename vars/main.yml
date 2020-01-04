@@ -11,9 +11,6 @@ _buildtools_packages:
     - openssl-dev
     - perl-utils
     - python3-dev
-  Archlinux:
-    - base-devel
-    - libelf
   Debian:
     - bison
     - build-essential
