@@ -18,11 +18,15 @@ _buildtools_packages:
   CentOS-7:
     - "@Development Tools"
     - elfutils-libelf-devel
+    - libffi-devel
+    - openssl-devel
     - perl-Digest-SHA
     - python-devel
   CentOS:
     - "@Development Tools"
     - elfutils-libelf-devel
+    - libffi-devel
+    - openssl-devel
     - perl-Digest-SHA
     - python3-devel
   RedHat:
