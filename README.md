@@ -2,9 +2,9 @@
 
 Install buildtools on your system.
 
-|Travis|GitHub|Quality|Downloads|
-|------|------|-------|---------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-buildtools.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-buildtools)|[![github](https://github.com/robertdebock/ansible-role-buildtools/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-buildtools/actions)|[![quality](https://img.shields.io/ansible/quality/22111)](https://galaxy.ansible.com/robertdebock/buildtools)|[![downloads](https://img.shields.io/ansible/role/d/22111)](https://galaxy.ansible.com/robertdebock/buildtools)|
+|Travis|GitHub|Quality|Downloads|Version|
+|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-buildtools.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-buildtools)|[![github](https://github.com/robertdebock/ansible-role-buildtools/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-buildtools/actions)|[![quality](https://img.shields.io/ansible/quality/22111)](https://galaxy.ansible.com/robertdebock/buildtools)|[![downloads](https://img.shields.io/ansible/role/d/22111)](https://galaxy.ansible.com/robertdebock/buildtools)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-buildtools.svg)](https://github.com/robertdebock/ansible-role-buildtools/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
