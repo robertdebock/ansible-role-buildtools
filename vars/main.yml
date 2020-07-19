@@ -12,6 +12,14 @@ _buildtools_packages:
     - openssl-dev
     - perl-utils
     - python3-dev
+  Amazon:
+    - bison
+    - elfutils-libelf-devel
+    - gcc
+    - make
+    - perl-Digest-SHA
+    - python2-devel
+    - libffi-devel
   Debian:
     - bison
     - build-essential
