@@ -36,6 +36,8 @@ _buildtools_packages:
     - gcc
     - make
     - perl-Digest-SHA
+    - python3-devel
+    - libffi-devel
   Suse:
     - bison
     - gcc
