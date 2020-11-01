@@ -32,40 +32,6 @@ The machine may need to be prepared using `molecule/resources/prepare.yml`:
     - role: robertdebock.bootstrap
 ```
 
-For verification `molecule/resources/verify.yml` runs after the role has been applied.
-```yaml
----
-- name: Verify
-  hosts: all
-  become: no
-  gather_facts: no
-
-  tasks:
-    - name: run gcc
-      command: gcc --version
-
-    - name: run make
-      command: make --version
-
-    - name: run shasum
-      command: shasum --version
-
-    - name: run bison
-      command: bison --version
-
-    - name: find libelf
-      find:
-        paths: /usr
-        patterns: libelf.so.1
-      register: buildtools_find_libelf
-
-    - name: assert the results
-      assert:
-        that:
-          - buildtools_find_libelf.matched >= 0
-        msg: could not find libelf.so.1 in /usr
-```
-
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
 
 
@@ -74,13 +40,11 @@ Also see a [full explanation and example](https://robertdebock.nl/how-to-use-the
 - Access to a repository containing packages, likely on the internet.
 - A recent version of Ansible. (Tests run on the current, previous and next release of Ansible.)
 
-The following roles can be installed to ensure all requirements are met, using `ansible-galaxy install -r requirements.yml`:
+## [Status of requirements](#status-of-requirements)
 
-```yaml
----
-- robertdebock.bootstrap
-
-```
+| Requirement | Travis | GitHub |
+|-------------|--------|--------|
+| [robertdebock.bootstrap](https://galaxy.ansible.com/robertdebock/bootstrap) | [![Build Status Travis](https://travis-ci.com/robertdebock/ansible-role-bootstrap.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-bootstrap) | [![Build Status GitHub](https://github.com/robertdebock/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-bootstrap/actions) |
 
 ## [Context](#context)
 
