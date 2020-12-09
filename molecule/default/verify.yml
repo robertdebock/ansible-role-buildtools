@@ -19,8 +19,9 @@
 
     - name: check libelf
       find:
-        paths: /usr
+        path: /usr
         patterns: libelf.so.1
+        recurse: yes
       register: buildtools_find_libelf
       failed_when:
         - buildtools_find_libelf.matched <= 0
