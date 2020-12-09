@@ -18,10 +18,8 @@
       command: bison --version
 
     - name: check libelf
-      find:
-        path: /usr
-        patterns: libelf.so.1
-        recurse: yes
+      stat:
+        path: /usr/lib64
       register: buildtools_find_libelf
       failed_when:
-        - buildtools_find_libelf.matched <= 0
+        - not buildtools_find_libelf.stat.exists
