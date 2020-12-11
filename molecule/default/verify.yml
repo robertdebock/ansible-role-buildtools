@@ -16,10 +16,3 @@
 
     - name: run bison
       command: bison --version
-
-    - name: check libelf
-      stat:
-        path: /usr/lib64
-      register: buildtools_find_libelf
-      failed_when:
-        - not buildtools_find_libelf.stat.exists
