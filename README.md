@@ -1,6 +1,6 @@
 # [buildtools](#buildtools)
 
-Install buildtools on your system.
+Install buildtools on your system
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
