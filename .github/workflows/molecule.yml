@@ -22,7 +22,7 @@ jobs:
         with:
           path: "${{ github.repository }}"
       - name: ansible-lint
-        uses: ansible-community/ansible-lint-action
+        uses: ansible-community/ansible-lint-action@main
       - name: molecule
         uses: robertdebock/molecule-action@4.0.8
         with:
