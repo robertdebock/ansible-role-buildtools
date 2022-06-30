@@ -22,7 +22,10 @@ jobs:
         with:
           path: "${{ github.repository }}"
       - name: mark repository as safe
-        run: git config --global --add safe.directory $GITHUB_WORKSPACE
+        run: |
+          echo "github.workspace: ${{ github.workspace }}"
+          echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+          git config --global --add safe.directory ${{ github.workspace }}
       - name: molecule
         uses: robertdebock/molecule-action@4.0.8
         with:
