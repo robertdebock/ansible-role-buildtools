@@ -19,14 +19,10 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3
-        with:
-          path: "${{ github.repository }}"
+        # with:
+        #   path: "${{ github.repository }}"
       - name: ansible-lint
         uses: ansible-community/ansible-lint-action@main
-      - name: molecule
-        uses: robertdebock/molecule-action@4.0.8
-        with:
-          command: lint
   test:
     needs:
       - lint
