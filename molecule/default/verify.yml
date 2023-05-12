@@ -5,18 +5,18 @@
   gather_facts: no
 
   tasks:
-    - name: run gcc
+    - name: Run gcc
       ansible.builtin.command:
         cmd: gcc --version
 
-    - name: run make
+    - name: Run make
       ansible.builtin.command:
         cmd: make --version
 
-    - name: run shasum
+    - name: Run shasum
       ansible.builtin.command:
         cmd: shasum --version
 
-    - name: run bison
+    - name: Run bison
       ansible.builtin.command:
         cmd: bison --version
