@@ -2,9 +2,9 @@
 
 Install buildtools on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-buildtools/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-buildtools/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-buildtools/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-buildtools)|[![quality](https://img.shields.io/ansible/quality/22111)](https://galaxy.ansible.com/robertdebock/buildtools)|[![downloads](https://img.shields.io/ansible/role/d/22111)](https://galaxy.ansible.com/robertdebock/buildtools)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-buildtools.svg)](https://github.com/robertdebock/ansible-role-buildtools/releases/)|
+|GitHub|GitLab|Downloads|Version|
+|------|------|---------|-------|
+|[![github](https://github.com/robertdebock/ansible-role-buildtools/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-buildtools/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-buildtools/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-buildtools)|[![downloads](https://img.shields.io/ansible/role/d/24452)](https://galaxy.ansible.com/robertdebock/buildtools)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-buildtools.svg)](https://github.com/robertdebock/ansible-role-buildtools/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -76,7 +76,7 @@ The minimum version of Ansible required is 2.12, tests have been done to:
 - The current version.
 - The development version.
 
-If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-buildtools/issues)
+If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-buildtools/issues).
 
 ## [License](#license)
 
