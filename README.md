@@ -1,4 +1,4 @@
-# Ansible role [buildtools](#buildtools)
+# [Ansible role buildtools](#buildtools)
 
 Install buildtools on your system.
 
